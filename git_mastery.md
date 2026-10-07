@@ -9,3 +9,12 @@ you are on feature branch
 - git pull origin main
 Resolve If there are any conflicts, then you can push feature branch to remote and create PR against main.
 
+2. `git rebase branch-name`
+- git rebase command will reapply your local feature-branch changes on top of latest remote main branch, one by one.
+- rebase will rewrite the history
+- if conflicts occur during rebase, we resolve them and add to staging area and continue with rebase.
+> rebase two branches flow
+you are on feature branch
+- git fetch origin main-branch
+- git rebase origin/main-branch
+- If conflicts occur, resolve them and push feature branch to remote and create PR against main
